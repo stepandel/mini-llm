@@ -23,13 +23,13 @@ import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from gpt_fine_tune_instructions import custom_collate_fn, InstructionDataset, format_input
+from modules.gpt_fine_tune_instructions import custom_collate_fn, InstructionDataset, format_input
 from ollama_evaluator import generate_model_scores
-from gpt_utils import download_and_load_file, download_and_load_gpt2, load_weights_into_gpt
-from gpt_model import GPTModel, generate
-from gpt_pretraining import train_model_simple
-from gpt_utils import plot_losses
-from gpt_data import text_to_token_ids, token_ids_to_text
+from modules.gpt_utils import download_and_load_file, download_and_load_gpt2, load_weights_into_gpt
+from modules.gpt_model import GPTModel, generate
+from modules.gpt_pretraining import train_model_simple
+from modules.gpt_utils import plot_losses
+from modules.gpt_data import text_to_token_ids, token_ids_to_text
 
 
 # Configure logging

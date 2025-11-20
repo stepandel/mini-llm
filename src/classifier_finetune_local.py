@@ -15,13 +15,13 @@ import tiktoken
 import torch
 from torch.utils.data import DataLoader
 
-from gpt_utils import create_balanced_dataset, load_weights_into_gpt, plot_values
-from gpt_fine_tune_classifier import (
+from modules.gpt_utils import create_balanced_dataset, load_weights_into_gpt, plot_values
+from modules.gpt_fine_tune_classifier import (
     random_split, SpamDataset, GPTClassifierModel, 
     cal_accuracy_loader, calc_loss_loader, train_classifier_simple
 )
-from gpt_model import GPTModel
-from gpt_download import download_and_load_gpt2
+from modules.gpt_model import GPTModel
+from modules.gpt_download import download_and_load_gpt2
 
 
 def generate_classifier_output_path(model_size, context_length, output_dir="checkpoints"):

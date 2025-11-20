@@ -2,7 +2,7 @@ import json
 import urllib.request
 from tqdm import tqdm
 import psutil
-from gpt_fine_tune_instructions import format_input
+from modules.gpt_fine_tune_instructions import format_input
 
 def check_if_running(process_name):
 	running = False

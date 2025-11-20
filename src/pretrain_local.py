@@ -22,9 +22,9 @@ from datetime import datetime
 
 import torch
 import tiktoken
-from gpt_model import GPTModel
-from gpt_data import create_dataloader
-from gpt_pretraining import train_model_simple
+from modules.gpt_model import GPTModel
+from modules.gpt_data import create_dataloader
+from modules.gpt_pretraining import train_model_simple
 
 
 # Configure logging
