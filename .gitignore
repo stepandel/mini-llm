@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files
+*.pth
+
+# Data files
+*.csv
+*.txt
+*.json
+
+# PDF files
+*.pdf
+
+# Logs
+*.log
+
+# Checkpoints and model directories
+checkpoints/
+gpt2/
+
+# Materials
+llm-from-scratch-material/
+
+# Data
+SMSSpamCollection
