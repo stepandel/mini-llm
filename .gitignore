@@ -25,8 +25,5 @@ __pycache__/
 checkpoints/
 gpt2/
 
-# Materials
-llm-from-scratch-material/
-
 # Data
 SMSSpamCollection
